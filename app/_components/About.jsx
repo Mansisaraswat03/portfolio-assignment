@@ -19,12 +19,12 @@ const About = () => {
           <div className="lg:mr-20">
             <article className="space-y-4">
               <h2 className="text-primary font-bold">ABOUT ME</h2>
-              <p className=" font-bold text-black text-[20px] w-[420px]">
+              <p className=" font-bold text-black text-[20px] w-[400px]">
                 A passionate Senior Designer and Front-End Developer based In
                 NYC, USA
               </p>
 
-              <p className="w-[400px] text-gray-400 mt-4">
+              <p className="w-[380px] text-gray-400 mt-4">
                 I am passionate Senior Designer, and I'm very passionate and
                 dedicated to my work. With 7 years experience as a professional
                 Web developer, I have acquired the skills and knowledge
