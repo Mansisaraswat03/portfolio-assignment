@@ -14,12 +14,12 @@ const About = () => {
 
         <div className="mt-5 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-20 lg:px-10">
           <div className="relative h-64 overflow-hidden sm:h-80 lg:h-full">
-            <Image
+          <Image
               alt="hero"
               src="/blank.jpg"
-              width={500}
-              height={1000}
-              className="absolute inset-0 h-full  object-cover rounded-3xl ml-8"
+              width={800}
+              height={800}
+              className="absolute inset-0 h-full w-full object-cover rounded-xl"
             />
           </div>
 
