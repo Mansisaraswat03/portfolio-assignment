@@ -9,16 +9,19 @@ const Navbar = () => {
     
     const setClickIcon =()=>{
     setIcon(prevState => !prevState);
+    const clickSound = new Audio(`${icon ? "/1.mp3" : "/2.mp3"}`);
+    clickSound.play();
     }
 
 
   return (
-    <div className='flex items-center justify-between px-4 '>
+    <>
+    <div className='flex items-center justify-between '>
     <div>
-     <Image src='/logo.png' alt='logo' height={40} width={30} className='m-2' />
+     <Image src='/logo.png' alt='logo' height={40} width={30} className='mt-2' />
      </div>
      <div className='flex items-center gap-10 justify-around'>
-     <ul  className={`${icon ? 'block lg:flex lg::items-center gap-8 ':'hidden'}`}>
+     <ul  className={` ${icon ? 'block lg:flex lg::items-center gap-8 transform transition-all duration-2000 delay-100 ease-in-out':'hidden'}`}>
         {Menu.map((item,index)=>(
             <li className=' hover:text-primary' key={item.id}>{item.name}</li>
         ))}
@@ -28,6 +31,15 @@ const Navbar = () => {
     }
      </div>
     </div>
+    <audio id="click-sound">
+        <source src="/1.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+      <audio id="cross-sound">
+        <source src="/2.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+      </>
   )
 }
 

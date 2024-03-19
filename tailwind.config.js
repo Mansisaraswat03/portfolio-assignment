@@ -66,6 +66,11 @@ module.exports = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+         // "slideInFromLeft":{
+        //   from: { height: "0%" },
+        //   to: { height: "100%" },
+        // }
+       
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
