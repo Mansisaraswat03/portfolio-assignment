@@ -4,9 +4,9 @@ import About from "./_components/About";
 
 export default function Home() {
   return (
-   <div className="md:px-10">
-    <Navbar/>
-    <About/>
-   </div>
+    <div className="md:px-10">
+      <Navbar />
+      <About />
+    </div>
   );
 }
