@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import { Menu } from "../data/data";
+import Link from "next/link";
 
 const Navbar = () => {
   const [icon, setIcon] = useState(false);
@@ -16,7 +17,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="flex items-center justify-between  ">
+      <div className="flex items-center justify-between sticky top-0 z-50 ">
         <div>
           <Image
             src="/logo.png"
@@ -28,16 +29,16 @@ const Navbar = () => {
         </div>
         <div className="hidden lg:flex items-center gap-10 justify-around">
           <ul
-            className={`${
+            className={`transition-all duration-3000 ${
               icon
-                ? "block lg:flex lg::items-center gap-8 transform transition-all duration-2000 delay-100 ease-in-out"
+                ? "block lg:flex lg::items-center gap-8  "
                 : "hidden"
             }`}
           >
             {Menu.map((item, index) => (
-              <li className=" hover:text-primary" key={item.id}>
+              <Link href={item.path}><li className=" hover:text-primary" key={item.id}>
                 {item.name}
-              </li>
+              </li></Link>
             ))}
           </ul>
           {!icon ? (
@@ -88,9 +89,9 @@ const Navbar = () => {
             }`}
           >
             {Menu.map((item, index) => (
-              <li className=" hover:text-primary pl-6 mt-1 font-semibold" key={item.id}>
+              <Link href={item.path}><li className=" hover:text-primary pl-6 mt-1 font-semibold" key={item.id}>
                 {item.name}
-              </li>
+              </li></Link>
             ))}
           </ul>
           </div>
