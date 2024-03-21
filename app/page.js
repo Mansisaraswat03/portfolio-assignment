@@ -1,13 +1,18 @@
-import Image from "next/image";
 import Navbar from "./_components/Navbar";
-import About from "./_components/About";
-import Portfolio from "./_components/Portfolio";
+import About from "./_pages/About";
+import Portfolio from "./_pages/Portfolio";
 import Footer from "./_components/Footer";
+import Preloader from "./_components/Preloader";
+import MagicCursor from "./_components/MagicCursor";
+import Colors from "./_components/Colors";
 
 export default function Home() {
   return (
-    <div className="md:px-10">
+    <div>
+      <Preloader/>
+      <MagicCursor/>
       <Navbar />
+      <Colors/>
       <About />
       <Portfolio/>
       <Footer/>

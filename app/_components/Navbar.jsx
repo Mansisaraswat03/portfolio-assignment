@@ -17,17 +17,17 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="flex items-center justify-between sticky top-0 z-50 ">
+      <div className=" md:mx-20 flex items-center justify-between  h-12 sticky top-0 z-50 ">
         <div>
           <Image
             src="/logo.png"
             alt="logo"
             height={40}
             width={30}
-            className="mt-2 pl-1  "
+            className="mt-2 pl-1 cursor-pointer "
           />
         </div>
-        <div className="hidden lg:flex items-center gap-10 justify-around">
+        <div className="hidden lg:flex items-center gap-10 justify-around cursor-pointer">
           <ul
             className={`transition-all duration-3000 ${
               icon
@@ -36,7 +36,7 @@ const Navbar = () => {
             }`}
           >
             {Menu.map((item, index) => (
-              <Link href={item.path}><li className=" hover:text-primary" key={item.id}>
+              <Link href={item.path}><li className=" hover:text-primary " key={item.id}>
                 {item.name}
               </li></Link>
             ))}
@@ -60,7 +60,7 @@ const Navbar = () => {
           )}
         </div>
 
-        <div className="lg:hidden">
+        <div className="lg:hidden cursor-pointer">
         {!icon ? (
             <Image
               onClick={setClickIcon}
@@ -80,7 +80,7 @@ const Navbar = () => {
           )}
         </div>
       </div>
-      <div className="lg:hidden pt-4">
+      <div className="lg:hidden pt-4 cursor-pointer">
           <ul
             className={`${
               menu

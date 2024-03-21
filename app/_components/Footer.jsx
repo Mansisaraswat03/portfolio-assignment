@@ -8,12 +8,11 @@ const Footer = () => {
     >
       <p className='items-center py-6 text-white'>Copyright © 2021. All rights are reserved</p>
 
-      <ul className="mt-8 flex justify-center gap-2 sm:mt-0 lg:justify-end">
+      <ul className="mt-8 flex justify-center gap-2 sm:mt-0 lg:justify-end cursor-pointer">
         <li>
           <a
             href="#"
             rel="noreferrer"
-            target="_blank"
             className="text-gray-700 transition hover:opacity-75"
           >
             <span className="sr-only">Facebook</span>
@@ -32,7 +31,6 @@ const Footer = () => {
           <a
             href="#"
             rel="noreferrer"
-            target="_blank"
             className="text-gray-700 transition hover:opacity-75"
           >
             <span className="sr-only">Instagram</span>
@@ -51,7 +49,6 @@ const Footer = () => {
           <a
             href="#"
             rel="noreferrer"
-            target="_blank"
             className="text-gray-700 transition hover:opacity-75"
           >
             <span className="sr-only">Twitter</span>
@@ -68,7 +65,6 @@ const Footer = () => {
           <a
             href="#"
             rel="noreferrer"
-            target="_blank"
             className="text-gray-700 transition hover:opacity-75"
           >
             <span className="sr-only">GitHub</span>
@@ -87,7 +83,6 @@ const Footer = () => {
           <a
             href="#"
             rel="noreferrer"
-            target="_blank"
             className="text-gray-700 transition hover:opacity-75"
           >
             <span className="sr-only">Dribbble</span>

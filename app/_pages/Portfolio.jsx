@@ -1,5 +1,5 @@
 import React from 'react'
-import Card from './Card'
+import Card from '../_components/Card'
 import { Cards } from '../data/data'
 import Link from 'next/link'
 
