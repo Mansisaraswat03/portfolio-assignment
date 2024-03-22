@@ -13,10 +13,7 @@ const MagicCursor = () => {
       // Check if the cursor is over a text, button, image, or video element
       const targetElement = e.target;
       if (
-        targetElement.tagName === 'TEXT' ||
-        targetElement.tagName === 'BUTTON' ||
-        targetElement.tagName === 'IMG' ||
-        targetElement.tagName === 'VIDEO'
+        targetElement.tagName === 'IMG' 
       ) {
         setHoveredElement(targetElement);
       } else {

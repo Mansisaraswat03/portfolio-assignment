@@ -1,6 +1,5 @@
 import React from "react";
 
-
   export const Menu = [
         {
           id: 1,
@@ -71,5 +70,24 @@ import React from "react";
         name: "New Telephone",
         type:"Image",
         path:"#"
+      }
+     ]
+
+     export const ServiceData =[
+      {
+        img:"/design.png",
+        name:"Design"
+      },
+      {
+        img:"/development.png",
+        name:"Development"
+      },
+      {
+        img:"/maintain.png",
+        name:"Maintain"
+      },
+      {
+        img:"/quality.png",
+        name:"Quality"
       }
      ]

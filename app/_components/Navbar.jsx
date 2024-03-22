@@ -7,6 +7,7 @@ import Link from "next/link";
 const Navbar = () => {
   const [icon, setIcon] = useState(false);
   const [menu,setMenu] = useState(false);
+  const [color,setColor] = useState(null);
 
   const setClickIcon = () => {
     setIcon((prevState) => !prevState);
@@ -14,6 +15,10 @@ const Navbar = () => {
     clickSound.play();
     setMenu((prevState) => !prevState);
   };
+
+  const handleSetColor=(item)=>{
+    setColor(item);
+  }
 
   return (
     <>
@@ -36,7 +41,7 @@ const Navbar = () => {
             }`}
           >
             {Menu.map((item, index) => (
-              <Link href={item.path}><li className=" hover:text-primary " key={item.id}>
+              <Link href={item.path}><li className={`hover:text-primary ${color===item ? "text-primary" : ""}`}   key={index.id} onClick={()=>handleSetColor(item)}>
                 {item.name}
               </li></Link>
             ))}
@@ -80,16 +85,14 @@ const Navbar = () => {
           )}
         </div>
       </div>
-      <div className="lg:hidden pt-4 cursor-pointer">
-          <ul
-            className={`${
+      <div className={`lg:hidden  ${
               menu
-                ? ""
+                ? "pt-4 cursor-pointer z-20 fixed bg-white w-full"
                 : "hidden"
-            }`}
-          >
+            }`}>
+          <ul>
             {Menu.map((item, index) => (
-              <Link href={item.path}><li className=" hover:text-primary pl-6 mt-1 font-semibold" key={item.id}>
+              <Link href={item.path}><li className={`hover:text-primary pl-6 mt-1 font-semibold ${color===item ? "text-primary" : ""}`} key={index.id} onClick={()=>handleSetColor(item)}>
                 {item.name}
               </li></Link>
             ))}

@@ -5,6 +5,7 @@ import Footer from "./_components/Footer";
 import Preloader from "./_components/Preloader";
 import MagicCursor from "./_components/MagicCursor";
 import Colors from "./_components/Colors";
+import Services from "./_pages/Services"
 
 export default function Home() {
   return (
@@ -14,7 +15,8 @@ export default function Home() {
       <Navbar />
       <Colors/>
       <About />
-      <Portfolio/>
+      <Services />
+      <Portfolio />
       <Footer/>
     </div>
   );
