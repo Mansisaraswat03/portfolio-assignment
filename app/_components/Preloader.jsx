@@ -14,7 +14,7 @@ const Preloader = () => {
   return (
     loading && (
     <div id="preloader">
-		<div class="loader_line"></div>
+		<div className="loader_line"></div>
 	</div>
   ))
 }

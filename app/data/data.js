@@ -1,6 +1,4 @@
-import React from "react";
-
-  export const Menu = [
+    export const Menu = [
         {
           id: 1,
           name: "Home",
@@ -73,7 +71,7 @@ import React from "react";
       }
      ]
 
-     export const ServiceData =[
+     export const ServiceDataLeft =[
       {
         img:"/design.png",
         name:"Design"
@@ -81,13 +79,101 @@ import React from "react";
       {
         img:"/development.png",
         name:"Development"
-      },
-      {
-        img:"/maintain.png",
-        name:"Maintain"
-      },
-      {
-        img:"/quality.png",
-        name:"Quality"
       }
      ]
+ 
+     export const ServiceDataRight =[
+     {
+      img:"/maintain.png",
+      name:"Maintain"
+    },
+    {
+      img:"/quality.png",
+      name:"Quality"
+    }
+  ]
+
+  export const ServiceData = [
+    {
+      img:"/design.png",
+      name:"Design"
+    },
+    {
+      img:"/development.png",
+      name:"Development"
+    },
+    {
+      img:"/maintain.png",
+      name:"Maintain"
+    },
+    {
+      img:"/quality.png",
+      name:"Quality"
+    }
+  ]
+
+     export const Progressbar =[
+      {
+        label: "HTML & CSS",
+        progress:"95"
+      },
+      {
+        label: "JavaScript",
+        progress:"80"
+      },
+      {
+        label: "WordPress",
+        progress:"90"
+      }
+     ]
+
+    export const colors =[
+      {
+        id:1,
+        name:"blue"
+      },
+      {
+        id:2,
+        name:"green"
+      },
+      {
+        id:3,
+        name:"yellow"
+      },
+      {
+        id:4,
+        name:"red"
+      },
+      {
+        id:5,
+        name:"purple"
+      },
+      {
+        id:6,
+        name:"indigo"
+      },
+      {
+        id:7,
+        name:"pink"
+      },
+      {
+        id:8,
+        name:"gray"
+      },
+      {
+        id:9,
+        name:"teal"
+      },
+      {
+        id:10,
+        name:"orange"
+      },
+      {
+        id:11,
+        name:"cyan"
+      },
+      {
+        id:12,
+        name:"lime"
+      }
+    ]

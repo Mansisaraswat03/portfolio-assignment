@@ -22,7 +22,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className=" md:mx-20 flex items-center justify-between  h-12 sticky top-0 z-50 ">
+      <div className=" md:mx-20 flex items-center justify-between h-12 sticky top-0 z-50 ">
         <div>
           <Image
             src="/logo.png"

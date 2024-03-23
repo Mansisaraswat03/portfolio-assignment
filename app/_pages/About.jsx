@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-
 const About = () => {
   return (
     <section id="about">
@@ -12,12 +11,11 @@ const About = () => {
               src="/blank.jpg"
               width={800}
               height={800}
-              className="absolute inset-0 h-full w-full object-cover rounded-xl"
+              className="absolute inset-0 h-full w-full rounded-xl"
             />
           </div>
 
-          <div className="lg:mr-20">
-            <article className="space-y-4">
+            <article className="sm:w-full lg:mr-20 ">
               <h2 className="text-primary font-bold">ABOUT ME</h2>
               <p className=" font-bold text-black text-[20px] w-[360px]">
                 A passionate Senior Designer and Front-End Developer based In
@@ -38,18 +36,17 @@ const About = () => {
               />
 
               <h2
-                className="p-2 px-3 border-[1px] hover:border-primary
+                className={`p-2 px-3 border-[1px] hover:border-primary
                      hover:text-black hover:bg-white rounded-full w-[200px] h-12 text-center items-center
                         text-[18px] mt-2
                         cursor-pointer 
-                        bg-primary text-white"
+                        bg-primary text-white`}
               >
                 Download CV
               </h2>
             </article>
           </div>
         </div>
-      </div>
     </section>
   );
 };
