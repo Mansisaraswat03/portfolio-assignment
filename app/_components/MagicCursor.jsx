@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 
-const MagicCursor = () => {
+const MagicCursor = ({selectedColor}) => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [hoveredElement, setHoveredElement] = useState(null);
   const [isVisible, setIsVisible] = useState(false);
@@ -43,9 +43,10 @@ const MagicCursor = () => {
           } ${
             hoveredElement ? "shadow-primary" : ""
           } absolute w-10 h-10 border-2 border-primary rounded-full`}
-          style={{ left: `${position.x - 12}px`, top: `${position.y - 12}px` }}
+          style={{ left: `${position.x - 12}px`, top: `${position.y - 12}px`,border:`1px solid ${selectedColor}` }}
         >
           <div
+          style={{backgroundColor:selectedColor}}
             className={`${
               hoveredElement
                 ? "hidden"
@@ -59,3 +60,8 @@ const MagicCursor = () => {
 };
 
 export default MagicCursor;
+
+
+
+
+

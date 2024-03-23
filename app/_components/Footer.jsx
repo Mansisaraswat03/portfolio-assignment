@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Footer = () => {
+const Footer = ({ selectedColor}) => {
   return (
-    <div className="bg-primary">
+    <div style={{backgroundColor:selectedColor}}>
     <div
       className=" border-t border-gray-100 pt-8 sm:flex sm:items-center sm:justify-between px-40"
     >
