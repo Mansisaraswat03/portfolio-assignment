@@ -207,9 +207,10 @@
 .z{
   z-index: -99;
 }
+ 
  .avatar{
-	min-width: 450px;
-	min-height: 450px;
+	min-width: 300px;
+	min-height: 300px;
 	position: relative;
 	border-radius: 100%;
 }
@@ -239,3 +240,4 @@
 		 border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
 	}
 }
+
