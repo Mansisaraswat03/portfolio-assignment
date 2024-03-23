@@ -18,7 +18,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        video : "url('/blank.jpg')",
+        video : "url('/newyork.jpeg')",
       },
 
       colors: {

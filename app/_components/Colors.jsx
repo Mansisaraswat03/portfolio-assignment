@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { colors } from "../data/data";
-import Circle from "./Circle";
+import { SidebarColors } from "../data/data";
 const Colors = () => {
   const [isopen, setIsOpen] = useState(false);
   const handleIsOpen = () => {
@@ -16,9 +15,13 @@ const Colors = () => {
         <h2 className="text-white text-center font-bold pt-12 px-3">Unlimited Colors</h2>
        
         <div className="grid grid-cols-4 gap-3 px-6 pt-4">
-     {colors.map((item,index)=>(
-      <Circle key={index} color={item.name}/>
-     ))}
+        {SidebarColors.map((color) => (
+              <div
+                key={color.id}
+                className="rounded-full w-8 h-8"
+                style={{ backgroundColor: color.name }}
+              ></div>
+            ))}
     </div>
     <div>
     <h2 className="text-white text-center font-bold pt-12 px-3">Magic Cursor</h2>

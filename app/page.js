@@ -16,7 +16,7 @@ export default function Home() {
       <MagicCursor/>
       <Navbar/>
       <Colors/>
-      {/* <HomePage/> */}
+      <HomePage/>
       <About />
       <Services/>
       <Portfolio/>

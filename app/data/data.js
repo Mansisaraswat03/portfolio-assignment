@@ -2,7 +2,7 @@
         {
           id: 1,
           name: "Home",
-          path: "#",
+          path: "#home",
         },
         {
           id: 2,
@@ -127,7 +127,7 @@
       }
      ]
 
-    export const colors =[
+    export const SidebarColors =[
       {
         id:1,
         name:"blue"
