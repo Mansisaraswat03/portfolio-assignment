@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const ImageWithText = () => {
   return (
-      <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-8 h-full w-full py-12 md:py-40" id="home">
+      <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-8 h-full w-full py-12 md:py-40 px-10" id="home">
           <div className="order-2 md:order-1 text-center md:text-left">
               <h1 className="text-4xl md:text-6xl text-transparent font-extra-bold bg-center bg-clip-text bg-video">
                   Senior Designer <br/> & Developer

@@ -25,52 +25,45 @@ const ProgressBar = ({ label, progress }) => {
 const Services = () => {
   return (
     <>
-      <section className="bg-gray-100 h-full px-20 py-20" id="services">
-        <div className=" px-4 py-8 sm:px-2 sm:py-12 lg:px-8 lg:py-10">
-          <div className="grid grid-cols-1 gap-y-5 lg:grid-cols-2 lg:items-center lg:gap-x-10">
-            <div className=" max-w-lg  lg:mx-0 ltr:lg:text-left rtl:lg:text-right">
+      <section className="bg-gray-100 px-4 py-8 sm:px-2 sm:py-12 lg:px-20 lg:py-20" id="services">
+        <div className="container mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:items-center">
+            <div className="max-w-lg lg:mx-0 lg:text-left">
               <h2 className="text-primary font-bold mb-2">SERVICES</h2>
-              <h2 className="text-3xl font-bold sm:text-xl w-70">
+              <h2 className="text-3xl font-bold sm:text-xl">
                 I offer a Full-cycle of Web Development Services
               </h2>
-
               <p className="mt-4 text-gray-400">
                 For more than 20 years our experts have been accomplishing
                 enough with modern Web Development, new generation programming
                 language, and Full Stack developers to deliver cost-effective
                 solutions.
               </p>
-              <div className="container mx-auto p-4">
-                <div>
-                {Progressbar.map((item,index)=>(
+              <div className="mt-6 grid gap-4 sm:grid-cols-1">
+                {Progressbar.map((item, index) => (
                   <ProgressBar label={item.label} progress={item.progress} key={index}/>
                 ))}
-                  </div>
               </div>
             </div>
-            <div className="hidden lg:flex h-[400px] gap-4">
-              <div className="pt-10 w-1/3">
+            <div className="grid lg:hidden gap-4">
+              {ServiceData.map((item, index) => (
+                <ServicesCard key={index} img={item.img} name={item.name} className="shadow-lg" />
+              ))}
+            </div>
+            <div className="hidden lg:flex lg:flex-col gap-4">
+              <div className="w-full">
                 {ServiceDataLeft.map((item, index) => (
                   <ServicesCard key={index} img={item.img} name={item.name} className="shadow-lg" />
                 ))}
               </div>
-              <div className="w-1/3">
+              <div className="w-full">
                 {ServiceDataRight.map((item, index) => (
                   <ServicesCard key={index} img={item.img} name={item.name} className="shadow-lg" />
                 ))}
               </div>
             </div>
-            <div className='lg:hidden grid grid-cols-1'>
-            {
-              ServiceData.map((item,index)=>(
-                <ServicesCard key={index} img={item.img} name={item.name} className="shadow-lg" />
-              ))
-            }
-
-            </div>
           </div>
         </div>
-
       </section>
     </>
   );
